@@ -37,3 +37,10 @@ class Product:
         print(f"Purchase successful. Total price: ${total_price}. Remaining stock: {self.amount}.")
     except ValueError as e:
         print(f"Purchase failed: {e}")
+
+    product1 = Product("Coffee Beans", 200, 12.99)
+
+    # Attempt to purchase products
+    product.make_purchase(5)    
+    product.make_purchase(100)   
+    product.make_purchase(-5)    
